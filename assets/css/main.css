@@ -1635,6 +1635,25 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+			
+		}
+
+		@media screen and (max-width: 500px) {
+			.image.fit {
+				padding-bottom: 250px;
+			}
+		}
+
+		@media screen and (max-width: 800px) {
+			.image.fit {
+				padding-bottom: 250px;
+			}
+		}
+
+		@media screen and (min-width: 1000px) {
+			.image.fit {
+				padding-bottom: 450px;
+			}
 		}
 
 		.image.featured {
