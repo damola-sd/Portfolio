@@ -16,36 +16,37 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-	/>
-	<script>
-			$(document).ready(function() {
-			  $("#submit-button").on("click", function(e) {
-				e.preventDefault(); // Prevent form submission
-	  
-				// you would need to set the following values from your form fields
-				var name = $("name").val();
-				var email = $("email").val();
-				var message = $("message").val();
-				var dataString =
-				  "surname=" + name + "&email=" + email + "&message=" + message;
-	  
-				$.ajax({
-				  type: "POST",
-				  url: "mailHandler.php",
-				  data: dataString,
-				  success: function() {
-					$(".messages")
-					  .html("Thank you for contacting me.  I will be in touch soon.")
-					  .css("visibility", "visible");
-					$("#submit-button").trigger("reset");
-					$(".messages")
-					  .fadeTo("slow", 1)
-					  .fadeTo(3000, 0);
-				  }
-				});
-			  });
-			});
-		  </script>
+    />
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+    <script>
+      $(document).ready(function() {
+        $("#submit-button").on("click", function(e) {
+          e.preventDefault(); // Prevent form submission
+
+          // you would need to set the following values from your form fields
+          var name = $("name").val();
+          var email = $("email").val();
+          var message = $("message").val();
+          var dataString =
+            "surname=" + name + "&email=" + email + "&message=" + message;
+
+          $.ajax({
+            type: "POST",
+            url: "mailHandler.php",
+            data: dataString,
+            success: function() {
+              $(".messages")
+                .html("Thank you for contacting me.  I will be in touch soon.")
+                .css("visibility", "visible");
+              $("#submit-button").trigger("reset");
+              $(".messages")
+                .fadeTo("slow", 1)
+                .fadeTo(3000, 0);
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body class="is-preload">
     <!-- Nav -->
@@ -70,7 +71,10 @@
               <h1>Hi. I'm <strong>Damola</strong>.</h1>
             </header>
             <p>
-              I am an ardent Full Stack Developer based in Nigeria, I love solving problems that require creative thinking and produces impactful solutions. When I am not coding, I love reading spy thrillers, playing some FPS games or playing with my dog, Billy.
+              I am an ardent Full Stack Developer based in Nigeria, I love
+              solving problems that require creative thinking and produces
+              impactful solutions. When I am not coding, I love reading spy
+              thrillers, playing some FPS games or playing with my dog, Billy.
             </p>
             <a href="#work" class="button large scrolly"
               >Learn about what I do</a
@@ -157,14 +161,13 @@
         <div class="row">
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <a href="https://sad-lalande-216479.netlify.com/" class="image featured"
-                ><img src="images/Guidr.PNG" alt=""
+              <a
+                href="https://sad-lalande-216479.netlify.com/"
+                class="image featured"
+                ><img src="images/guidr replace.PNG" alt=""
               /></a>
               <h3>
-                <a
-                  href="https://sad-lalande-216479.netlify.com/"
-                  >Guidr</a
-                >
+                <a href="https://sad-lalande-216479.netlify.com/">Guidr</a>
               </h3>
               <p>
                 Guidr is a web application that helps connect hike guides to
@@ -178,17 +181,19 @@
               <a href="#" class="image featured"
                 ><img src="images/Array.PNG" alt=""
               /></a>
-              <h3><a href="#">Array</a></h3>
+              <h3><a href="https://github.com/arrayhackathon2019/array-fe">Array</a></h3>
               <p>
                 A social media network for software developers that allows them
                 to connect
               </p>
+
+              <a href="https://github.com/arrayhackathon2019/array-fe">Github</a>
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
               <a href="#" class="image featured"
-                ><img src="images/Niyon.PNG" alt=""
+                ><img src="images/Niyon new.PNG" alt=""
               /></a>
               <h3><a href="https://niyonapp.com/">Niyon</a></h3>
               <p>
@@ -339,6 +344,5 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    
   </body>
 </html>
