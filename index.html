@@ -19,8 +19,8 @@
     />
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
     <script>
-      $(document).ready(function() {
-        $("#submit-button").on("click", function(e) {
+      $(document).ready(function () {
+        $("#submit-button").on("click", function (e) {
           e.preventDefault(); // Prevent form submission
 
           // you would need to set the following values from your form fields
@@ -34,15 +34,13 @@
             type: "POST",
             url: "mailHandler.php",
             data: dataString,
-            success: function() {
+            success: function () {
               $(".messages")
                 .html("Thank you for contacting me.  I will be in touch soon.")
                 .css("visibility", "visible");
               $("#submit-button").trigger("reset");
-              $(".messages")
-                .fadeTo("slow", 1)
-                .fadeTo(3000, 0);
-            }
+              $(".messages").fadeTo("slow", 1).fadeTo(3000, 0);
+            },
           });
         });
       });
@@ -64,16 +62,17 @@
       <div class="container">
         <div class="row">
           <div class="col-4 col-5-large col-12-medium">
-            <span class="image fit"><img src="images/Dam1.jpg" alt=""/></span>
+            <span class="image fit"><img src="images/Dam1.jpg" alt="" /></span>
           </div>
           <div class="col-8 col-7-large col-12-medium">
             <header>
               <h1>Hi. I'm <strong>Damola</strong>.</h1>
             </header>
             <p>
-              I am an ardent Full Stack Developer based in Nigeria, I love
+              I am an ardent Full Stack Developer based in Nigeria, I enjoy
               solving problems that require creative thinking and produces
-              impactful solutions. When I am not coding. I can be found either playing video games or strength training in the gym
+              impactful solutions. When I am not coding. I can be found either
+              playing video games or strength training in the gym
             </p>
             <a href="#work" class="button large scrolly"
               >Learn about what I do</a
@@ -99,8 +98,8 @@
               <h3>JavaScript/TypeScript</h3>
               <p>
                 From Vanilla JavaScript, React, Nextjs and Gatsby to Express. I
-                use JavaScript and TypeScript to build world class, responsive Web
-                applications
+                use JavaScript and TypeScript to build world class, responsive
+                Web applications
               </p>
             </section>
           </div>
@@ -147,9 +146,7 @@
                 ><i class="fas fa-code fa-5x"></i
               ></span>
               <h3>Dart</h3>
-              <p>
-                Cross platform app Development with Flutter. 
-              </p>
+              <p>Cross platform app Development with Flutter.</p>
             </section>
           </div>
         </div>
@@ -172,32 +169,32 @@
         <div class="row">
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <a
-                href="https://cribmd.com/"
-                class="image featured"
-                ><img src="images/cribmd screenshot.PNG" alt=""
+              <a href="https://cribmd.com/" class="image featured"
+                ><img src="images/cribmd.PNG" alt=""
               /></a>
               <h3>
                 <a href="https://cribmd.com/">CribMd</a>
               </h3>
               <p>
-                CribMd is a Telemedical solutions application that allows doctors and patients to connect over video call and set up house visits as well.
+                CribMd is a Telemedical solutions application that allows
+                doctors and patients to connect over video call and set up house
+                visits as well.
               </p>
-              <span>Angular, NGXS, TypeScript</span>
+              <span>Angular 11, NGXS, AWS, NodeJS, MongoDB</span>
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
             <article class="box style2">
-              <a
-                href="https://app.selleramplify.com/"
-                class="image featured"
+              <a href="https://app.selleramplify.com/" class="image featured"
                 ><img src="images/SellerAmplify.PNG" alt=""
               /></a>
               <h3>
                 <a href="https://app.selleramplify.com/">SellerAmplify</a>
               </h3>
               <p>
-                SellerAmplify is a product optimization tool that allows online retailers to improve their product feeds on various shopping channels like Amazon and Google Product.
+                SellerAmplify is a product optimization tool that allows online
+                retailers to improve their product feeds on various shopping
+                channels like Amazon and Google Product.
               </p>
               <span>NodeJS, Express, MongoDB, VueJS, VueX</span>
             </article>
@@ -224,13 +221,19 @@
               <a href="#" class="image featured"
                 ><img src="images/Array.PNG" alt=""
               /></a>
-              <h3><a href="https://github.com/arrayhackathon2019/array-fe">Array</a></h3>
+              <h3>
+                <a href="https://github.com/arrayhackathon2019/array-fe"
+                  >Array</a
+                >
+              </h3>
               <p>
                 A social media network for software developers that allows them
                 to connect
               </p>
 
-              <a href="https://github.com/arrayhackathon2019/array-fe">Github</a>
+              <a href="https://github.com/arrayhackathon2019/array-fe"
+                >Github</a
+              >
             </article>
           </div>
           <div class="col-4 col-6-medium col-12-small">
@@ -238,12 +241,28 @@
               <a href="#" class="image featured"
                 ><img src="images/Niyon new.PNG" alt=""
               /></a>
-              <h3><a href="https://niyonapp.com/">Niyon</a></h3>
+              <h3><a href="https://niyon.vercel.app/">Niyon</a></h3>
               <p>
                 Niyon is a platform for connecting young professionals with
                 mentors in West Africa.
               </p>
               <a href="https://github.com/labseu2-niyon">Github</a>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a href="#" class="image featured"
+                ><img src="images/pic07.jpg" alt=""
+              /></a>
+              <h3><a href="">Haus Party</a></h3>
+              <p>
+                MVP of Mobile app for booking house party tickets and buying
+                drinks. Has location tracking feature to help you find house
+                address of party
+              </p>
+              <span>Flutter, NodeJS, MongoDB</span>
+
+              <!-- <a href="https://github.com/labseu2-niyon">Github</a> -->
             </article>
           </div>
           <!-- <div class="col-4 col-6-medium col-12-small">
